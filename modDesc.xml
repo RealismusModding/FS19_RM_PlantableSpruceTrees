@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="44">
+    <author>Realismus Modding</author>
+    <contributors>reallogger</contributors>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Plantable Spruce Trees</en>
+        <de>Plantable Spruce Trees</de>
+        <fr>Plantable Spruce Trees</fr>
+    </title>
+
+    <description>
+        <en><![CDATA[Buyable spruce tree saplings]]></en>
+        <de><![CDATA[Kaufbare Fichten-Setzlinge]]></de>
+        <fr><![CDATA[Plans d’épicéas achetables ]]></fr>
+    </description>
+
+    <iconFilename>icon.dds</iconFilename>
+    <multiplayer supported="true"/>
+
+    <extraSourceFiles>
+        <sourceFile filename="src/registerSpruceTrees.lua" />
+    </extraSourceFiles>
+
+    <l10n>
+        <text name="function_spruce_saplings">
+            <en>This pallet of spruce saplings is used to fill the tree planter. The saplings will grow and become large cuttable spruce trees.</en>
+            <de>Mit dieser Fichte-Setzlings-Palette wird der Baumpflanzer gefüllt. Die Setzlinge wachsen zu großen Fichten heran, die du fällen kannst.</de>
+            <fr>Cette palette de plants d'épicéas est utilisée pour remplir la planteuse d'arbres. Les jeunes arbres pousseront et deviendront de grands épicéas coupables.</fr>
+        </text>
+        <text name="shopItem_spruceSaplings">
+             <en>Spruce Saplings Pallet</en>
+            <de>Fichten-Setzlings-Palette</de>
+            <fr>Palette de plants d'épicéas</fr>
+        </text>
+    </l10n>
+
+    <storeItems>
+        <storeItem rootNode="fillablePallet" xmlFilename="resources/treeSaplingPallet.xml" />
+    </storeItems>
+</modDesc>
+

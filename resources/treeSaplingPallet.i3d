@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="treeSaplingPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="2" filename="$data/objects/pallets/pallet_normal.png" relativePath="false"/>
+    <File fileId="1" filename="$data/objects/pallets/pallet_diffuse.png" relativePath="false"/>
+    <File fileId="3" filename="$data/objects/pallets/pallet_specular.png" relativePath="false"/>
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="1" diffuseColor="0.5 0.5 0.5 1" specularColor="0 0 0" ambientColor="1 1 1">
+    </Material>
+    <Material name="treeSaplingPallet_mat" materialId="2" cosPower="100" specularColor="1 1 1" ambientColor="1 1 1">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="treeSaplingPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="fillablePallet_main_component1" shapeId="1" dynamic="true" compound="true" density="0.25" collisionMask="25178120" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="1">
+      <Shape name="treeSaplingPallet_vis" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="2"/>
+      <Shape name="palletAttacherTrigger" translation="0 0.175 0" shapeId="3" kinematic="true" trigger="true" collisionMask="8192" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="3"/>
+      <Shape name="exactFillRootNode" translation="0 0.58596 0" visibility="false" shapeId="4" kinematic="true" compound="true" collisionMask="1073741824" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="4"/>
+      <TransformGroup name="saplingHolder" translation="0 0.372539 0" collision="false" nodeId="5">
+        <TransformGroup name="sappling01" translation="-0.51 0 -0.314666" collision="false" nodeId="6"/>
+        <TransformGroup name="sappling02" translation="-0.258879 0 -0.314666" collision="false" nodeId="7"/>
+        <TransformGroup name="sappling03" translation="-0.0134506 -2.84217e-16 -0.314666" collision="false" nodeId="8"/>
+        <TransformGroup name="sappling04" translation="0.239526 -5.68434e-16 -0.314666" collision="false" nodeId="9"/>
+        <TransformGroup name="sappling05" translation="0.51 -8.52651e-16 -0.314666" collision="false" nodeId="10"/>
+        <TransformGroup name="sappling06" translation="-0.51 0 -0.106057" collision="false" nodeId="11"/>
+        <TransformGroup name="sappling07" translation="-0.258879 0 -0.106057" collision="false" nodeId="12"/>
+        <TransformGroup name="sappling08" translation="-0.0134506 -2.84217e-16 -0.106057" collision="false" nodeId="13"/>
+        <TransformGroup name="sappling09" translation="0.239526 -5.68434e-16 -0.106057" collision="false" nodeId="14"/>
+        <TransformGroup name="sappling10" translation="0.51 -8.52651e-16 -0.106057" collision="false" nodeId="15"/>
+        <TransformGroup name="sappling11" translation="-0.51 0 0.105838" collision="false" nodeId="16"/>
+        <TransformGroup name="sappling12" translation="-0.258879 0 0.105838" collision="false" nodeId="17"/>
+        <TransformGroup name="sappling13" translation="-0.0134506 -2.84217e-16 0.105838" collision="false" nodeId="18"/>
+        <TransformGroup name="sappling14" translation="0.239526 -5.68434e-16 0.105838" collision="false" nodeId="19"/>
+        <TransformGroup name="sappling15" translation="0.51 -8.52651e-16 0.105838" collision="false" nodeId="20"/>
+        <TransformGroup name="sappling16" translation="-0.51 0 0.317733" collision="false" nodeId="21"/>
+        <TransformGroup name="sappling17" translation="-0.258879 0 0.317733" collision="false" nodeId="22"/>
+        <TransformGroup name="sappling18" translation="-0.0134506 -2.84217e-16 0.317733" collision="false" nodeId="23"/>
+        <TransformGroup name="sappling19" translation="0.239526 -5.68434e-16 0.317733" collision="false" nodeId="24"/>
+        <TransformGroup name="sappling20" translation="0.51 -8.52651e-16 0.317733" collision="false" nodeId="25"/>
+      </TransformGroup>
+      <Shape name="transportPallet_col" translation="-0.622301 0.181872 -0.433009" visibility="false" shapeId="5" compoundChild="true" density="0.02" collisionMask="25178120" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="26"/>
+      <Shape name="transportPallet_col1" translation="-0.622301 0.181872 0.434665" visibility="false" shapeId="6" compoundChild="true" density="0.02" collisionMask="25178120" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="27"/>
+      <Shape name="transportPallet_col2" translation="0.622586 0.181872 -0.433009" visibility="false" shapeId="7" compoundChild="true" density="0.02" collisionMask="25178120" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="28"/>
+      <Shape name="transportPallet_col3" translation="0.622586 0.181872 0.434665" visibility="false" shapeId="8" compoundChild="true" density="0.02" collisionMask="25178120" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="29"/>
+      <Shape name="transportPallet_col4" translation="0.00271691 0.181872 0.434665" visibility="false" shapeId="9" compoundChild="true" density="0.02" collisionMask="25178120" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="30"/>
+      <Shape name="transportPallet_col5" translation="0.00271691 0.181872 -0.433009" visibility="false" shapeId="10" compoundChild="true" density="0.02" collisionMask="25178120" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="31"/>
+      <Shape name="transportPallet_col6" translation="-0.622301 0.181872 0.000948154" visibility="false" shapeId="11" compoundChild="true" density="0.02" collisionMask="25178120" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="32"/>
+      <Shape name="transportPallet_col7" translation="0.622586 0.181872 0.000948154" visibility="false" shapeId="12" compoundChild="true" density="0.02" collisionMask="25178120" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="33"/>
+      <Shape name="transportPallet_col8" translation="0.00271691 0.181872 0.000948154" visibility="false" shapeId="13" compoundChild="true" density="0.02" collisionMask="25178120" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="34"/>
+      <Shape name="solidColi" translation="0 0.175 0" visibility="false" shapeId="14" compoundChild="true" density="0.7" collisionMask="16781314" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="35"/>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="1">
+      <Attribute name="dynamicMountForceLimitScale" type="float" value="1"/>
+      <Attribute name="dynamicMountTriggerIndex" type="string" value="0>1"/>
+      <Attribute name="fillType" type="string" value="treeSaplings"/>
+      <Attribute name="startFillLevel" type="integer" value="20"/>
+      <Attribute name="visibilityNodesAdditive" type="boolean" value="true"/>
+      <Attribute name="visibilityNodesIndex" type="string" value="0>2"/>
+      <Attribute name="saplingFilename" type="string" value="resources/treeSapling.i3d"/>
+      <Attribute name="deleteIfEmpty" type="boolean" value="true"/>
+      <Attribute name="useRandomRot" type="boolean" value="true"/>
+      <Attribute name="treeType" type="string" value="treeSpruce"/>
+      <Attribute name="startScale" type="float" value="0.1"/>
+      <Attribute name="meshNodes" type="string" value="0"/>
+    </UserAttribute>
+  </UserAttributes>
+</i3D>
