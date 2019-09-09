@@ -27,7 +27,7 @@ French - Farmer1602
     <extraSourceFiles>
         <sourceFile filename="src/registerSpruceTrees.lua" />
     </extraSourceFiles>
-    
+
     <l10n>
         <text name="function_spruce_saplings">
             <en>This pallet of spruce saplings is used to fill the tree planter. The saplings will grow and become large cuttable spruce trees.</en>
