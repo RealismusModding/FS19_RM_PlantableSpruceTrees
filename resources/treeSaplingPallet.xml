@@ -9,7 +9,7 @@
             <capacity unit="$l10n_unit_pieces">20</capacity>
             <fillTypes>treeSaplings</fillTypes>
         </specs>
-        <image>store_pallet_saplings.png</image>
+        <image>resources/store_pallet_saplings.png</image>
         <price>1000</price>
         <allowLeasing>false</allowLeasing>
         <canBeSold>false</canBeSold>
